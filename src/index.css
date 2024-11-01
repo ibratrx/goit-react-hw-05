@@ -1,68 +1,84 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; /* Шрифт приложения */
+  line-height: 1.5; /* Высота строки */
+  font-weight: 400; /* Нормальное начертание шрифта */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color-scheme: light dark; /* Поддержка цветовых схем */
+  color: rgba(255, 255, 255, 0.87); /* Цвет текста */
+  background-color: #242424; /* Цвет фона */
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none; /* Отключение синтеза шрифта */
+  text-rendering: optimizeLegibility; /* Оптимизация читаемости текста */
+  -webkit-font-smoothing: antialiased; /* Сглаживание шрифта для WebKit */
+  -moz-osx-font-smoothing: grayscale; /* Сглаживание шрифта для macOS */
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  font-weight: 500; /* Жирный шрифт для ссылок */
+  color: #646cff; /* Цвет ссылок */
+  text-decoration: inherit; /* Унаследовать стиль подчеркивания */
 }
+
 a:hover {
-  color: #535bf2;
+  color: #535bf2; /* Цвет ссылок при наведении */
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  margin: 0; /* Убираем отступы у body */
+  display: flex; /* Используем flexbox для размещения содержимого */
+  place-items: center; /* Центрирование содержимого */
+  min-width: 320px; /* Минимальная ширина страницы */
+  min-height: 100vh; /* Минимальная высота страницы */
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box; /* Устанавливаем box-sizing для всех элементов */
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 3.2em; /* Размер шрифта для заголовка */
+  line-height: 1.1; /* Высота строки для заголовка */
+}
+
+ul,
+li {
+  list-style-type: none; /* Убираем маркеры у списков */
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+  border-radius: 8px; /* Закругленные углы кнопок */
+  border: 1px solid transparent; /* Прозрачная граница по умолчанию */
+  padding: 0.6em 1.2em; /* Отступы внутри кнопок */
+  font-size: 1em; /* Размер шрифта кнопок */
+  font-weight: 500; /* Жирный шрифт для кнопок */
+  font-family: inherit; /* Наследуем шрифт от родителя */
+  background-color: #1a1a1a; /* Цвет фона кнопок */
+  cursor: pointer; /* Курсор при наведении на кнопку */
+  transition: border-color 0.25s; /* Плавный переход цвета границы */
 }
+
 button:hover {
-  border-color: #646cff;
+  border-color: #646cff; /* Цвет границы при наведении */
 }
+
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 4px auto -webkit-focus-ring-color; /* Контур при фокусировке */
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #213547; /* Цвет текста для светлой схемы */
+    background-color: #ffffff; /* Цвет фона для светлой схемы */
   }
+  
   a:hover {
-    color: #747bff;
+    color: #747bff; /* Цвет ссылок при наведении в светлой схеме */
   }
+  
   button {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Цвет фона кнопок в светлой схеме */
   }
 }

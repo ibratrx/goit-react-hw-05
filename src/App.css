@@ -1,42 +1,65 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  max-width: 1280px; /* Максимальная ширина корневого элемента */
+  margin: 0 auto; /* Центрирование по горизонтали */
+  padding: 2rem; /* Отступы вокруг содержимого */
+  text-align: center; /* Выравнивание текста по центру */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app {
+  border: 0; /* Убираем границу */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  padding-left: 10px; /* Отступ слева для ссылок */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.container {
+  padding: 20px; /* Отступы внутри контейнера */
+  max-width: 800px; /* Максимальная ширина контейнера */
+  margin: 0 auto; /* Центрирование контейнера */
 }
 
-.card {
-  padding: 2em;
+.goBackButton:hover {
+  background-color: #0056b3; /* Цвет фона кнопки при наведении */
 }
 
-.read-the-docs {
-  color: #888;
+.movieDetails {
+  display: flex; /* Используем флекс-контейнер для размещения элементов */
+  align-items: flex-start; /* Выравнивание по верхнему краю */
+  gap: 20px; /* Промежуток между элементами */
+  margin-top: 20px; /* Отступ сверху */
+}
+
+.poster {
+  max-width: 200px; /* Максимальная ширина постера */
+  border-radius: 10px; /* Закругление углов постера */
+}
+
+.movieDetails h2 {
+  margin-bottom: 10px; /* Отступ снизу для заголовка */
+}
+
+.movieDetails p {
+  margin: 5px 0; /* Отступы сверху и снизу для параграфов */
+}
+
+.additionalInfo {
+  margin-top: 30px; /* Отступ сверху для дополнительной информации */
+}
+
+.additionalInfo ul {
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0; /* Убираем внутренние отступы */
+  display: flex; /* Используем флекс-контейнер для списка */
+  gap: 20px; /* Промежуток между элементами списка */
+}
+
+.additionalInfo a {
+  color: #007bff; /* Цвет текста для ссылок */
+  text-decoration: none; /* Убираем подчеркивание */
+  font-weight: bold; /* Жирный шрифт для ссылок */
+}
+
+.additionalInfo a:hover {
+  text-decoration: underline; /* Подчеркивание при наведении */
 }
