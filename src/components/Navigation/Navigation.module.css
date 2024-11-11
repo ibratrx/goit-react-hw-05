@@ -1,0 +1,12 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+    transition: all 0.3s;
+  }
+  .active {
+    color: #ff0000;
+  }

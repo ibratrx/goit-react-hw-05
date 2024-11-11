@@ -1,0 +1,24 @@
+.castTitle {
+    margin-bottom: 12px;
+  }
+  .castList {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .castItem {
+    min-height: 320px;
+  }
+  .actorImage {
+    max-width: 160px;
+  }
+  .actorItem {
+    max-width: 160px;
+  }

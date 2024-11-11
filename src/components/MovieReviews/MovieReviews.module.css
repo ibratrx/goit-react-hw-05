@@ -1,0 +1,7 @@
+.reviewBloc {
+    padding: 16px 16px 16px 0;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+  }
+  .reviewItem {
+    margin-top: 16px;
+  }
